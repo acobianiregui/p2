@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página DSP</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+        publicKey: "NOkTXceReeid9TGBs",
+        });
+    })();
+</script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Procesamiento Digital de Señales</h1>
+        <nav class="seccion1">
+            <ul>
+              <li><a href="#index">Inicio</a></li>
+                <li><a href="#fundamentos">Fundamentos</a></li>
+                <li><a href="#aplicaciones">Aplicaciones</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- contenidos pa el index -->
+    <main>
+        <section id="fundamentos" class="burbuja">
+            <h2>Fundamentos de DSP</h2>
+            <p>Contenido sobre los conceptos básicos de procesamiento digital de señales.</p>
+            <table border="1", id="tabla"> <!-- ver en css el estilo -->
+              <thead>
+                  <tr>
+                      <th>Nombre</th>
+                      <th>Edad</th>
+                      <th>Ciudad</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Antonio</td>
+                      <td>25</td>
+                      <td>Madrid</td>
+                  </tr>
+                  <tr>
+                      <td>Alicia</td>
+                      <td>30</td>
+                      <td>Barcelona</td>
+                  </tr>
+                  <tr>
+                      <td>Pedro</td>
+                      <td>35</td>
+                      <td>Valencia</td>
+                  </tr>
+              </tbody>
+          </table>
+          
+        </section>
+
+        <section id="aplicaciones" class="burbuja">
+            <h2>Aplicaciones de DSP</h2>
+            <p>Contenido sobre cómo se utiliza el DSP en diversas áreas.</p>
+        </section>
+
+        <section id="recursos" class="burbuja">
+            <h2>Recursos de DSP</h2>
+            <p>Enlaces a materiales de estudio sobre DSP.</p>
+        </section>
+        <section id="info">
+          <h5>Para obtener más información, rellene el formulario que se muestra abajo</h5>
+          <!-- Formulario, ver Css para conf -->
+          <!-- El action es para mandar la info -->
+          <form id=formulario action="https://formspree.io/f/xovjlnqq" method="post">
+
+            <fieldset>
+              <legend>Formulario</legend>
+              <label for="nombre_f">Nombre:</label>
+              <input type="text" name= nombre id="nombre_f" maxlength="15" size="15">
+              <label for="apellido1_f">1ºApellido:</label>
+              <input type="text" name=apellido1 id="apellido1_f" maxlength="15" size="15">
+              <label for="apellido2_f">1ºApellido:</label>
+              <input type="text" name=apellido2 id="apellido2_f" maxlength="15" size="15">
+              <label for="dir_email">email:</label>
+              <input type="email" name="email" id="dir_email">
+              <label for="genero_f">Genero</label>
+              <select name="genero_f" id="genero_f">
+                <option value="">Ecoja una opción</option>
+                <option value="dog">Hombre</option>
+                <option value="cat">Mujer</option>
+                <option value="hamster">Otro</option>
+              </select>
+              <button type="submit">Enviar</button>
+              <script src="./javascript/validar.js"></script>
+            </fieldset>
+          </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 PDS ANTON COBIAN IREGUI | All rights reserved</p>
+    </footer>
+
+</body>
+</html>
