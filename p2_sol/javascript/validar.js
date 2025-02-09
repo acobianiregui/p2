@@ -6,7 +6,7 @@ function enviar_mail(event){
     const apellido2 = document.getElementById("apellido2_f").value;
     const to_email = document.getElementById("dir_email").value.trim();
     const genero = document.getElementById("genero_f").value;
-    const terminacion="e";
+    let terminacion="e";
     if(genero=="Hombre"){
       terminacion="o";
     }else if(genero=="Mujer"){
