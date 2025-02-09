@@ -17,7 +17,7 @@ La pagina web de inicio (index) se puede encontrar en el siguiente link: <br>
 
 ## 🚨EXTRA🚨
 <p align="justify">
-Adicionalmente se ha implentado una funcionalidad de contestacion automática al mail que se indique en el formulario. Para ello se ha hechos de programación en javascript (ver codigo en su correspondiente carpteta) y el servidor gratuito emailjs.<br>
+Adicionalmente se ha implentado una funcionalidad de contestacion automática al mail que se indique en el formulario. Para ello se ha hecho uso de programación en javascript (ver codigo en su correspondiente carpteta) y el servidor gratuito emailjs.<br>
 
 **Si al probar esta funcionalidad no se recibe la contestacion automática, es posible que el servicio mail haya descartado el mensaje por spam.**
 
