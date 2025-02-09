@@ -69,13 +69,62 @@ main {
     padding: 20px;
 }
 
-.rollo{ /* Para textos */
-    width: 100%;
-    margin-left: 0px;
-    margin-right: 15px;
-
-   
+.contenedor {
+    display: flex; /* Usamos flexbox para que los elementos se alineen en fila */
+    justify-content: space-between; /* Deja espacio entre el texto y la imagen */
+    align-items: flex-start; /* Alinea los elementos al principio (arriba) */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
+
+.texto {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+    margin-right: 20px; /* Añade un margen entre el texto y la imagen */
+}
+
+.imagen_d {
+    display: block; /* Cambia de float a block */
+    margin: 0 0 0 40px; /* Ajusta el margen */
+    max-width: 350px; /* Limita el ancho máximo */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column; /* En pantallas más pequeñas, la imagen y el texto se apilan verticalmente */
+        align-items: center; /* Centra el contenido */
+    }
+
+    .imagen_d {
+        max-width: 300px; /* Limita el tamaño máximo de la imagen en pantallas pequeñas */
+        margin-top: 20px; /* Añade espacio entre la imagen y el texto */
+    }
+}
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .imagen_d {
+        width: 80%; /* Ajusta a 80% del contenedor en pantallas pequeñas */
+        max-width: 300px;
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1200px) {
+    .imagen_d {
+        width: 50%; /* Ajusta a 50% en pantallas grandes */
+        max-width: 500px;
+    }
+}
+
+.imagen_d{
+    float: right;
+    margin: 0 0 0 40px;
+    height: 300px;
+ 
+}
+
 /* Estilo de las secciones */
 .burbuja {
     background-color: white;
@@ -86,7 +135,6 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;                
     box-sizing: border-box;     
-    
 }
 
 /* Colores para cada sección */
@@ -102,7 +150,7 @@ main {
     background-color: #e4fbe9;
 }
 
-/* Ajuste para pantallas */
+
 @media (max-width: 768px) {
     .contenedor-secciones {
         flex-direction: column; 
@@ -110,8 +158,8 @@ main {
     }
 
     section {
-        width: 90%;  /* Cada sección ocupa el 90% del ancho en pantallas pequeñas */
-        margin-bottom: 20px;  /* Añadir margen entre las secciones */
+        width: 90%;  
+        margin-bottom: 20px; 
     }
 }
 
