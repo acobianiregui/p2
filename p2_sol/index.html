@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página DSP</title>
+    <title>Telecomaster</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -20,62 +20,72 @@
 
     <!-- Encabezado -->
     <header>
-        <h1>Procesamiento Digital de Señales</h1>
+        <h1>Telecomaster
+            <img src="./images/logo.png" alt="Logo de Telecomaster" />
+        </h1>
+        <h4><em>Inovación y tecnología para un mundo mas conectado</em></h4>
         <nav class="seccion1">
             <ul>
-              <li><a href="#index">Inicio</a></li>
-                <li><a href="#fundamentos">Fundamentos</a></li>
-                <li><a href="#aplicaciones">Aplicaciones</a></li>
-                <li><a href="#recursos">Recursos</a></li>
+              <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="aplicaciones.html">Aplicaciones</a></li>
+                <li><a href="formacion.html">Formación</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- contenidos pa el index -->
     <main>
-        <section id="fundamentos" class="burbuja">
-            <h2>Fundamentos de DSP</h2>
-            <p>Contenido sobre los conceptos básicos de procesamiento digital de señales.</p>
+        <section id="texto_inicio" class="rollo">
+            <p align="justify">
+                Telecomaster es una organización no gubernamental dedicada a la promoción global de los estudios en el ámbito de la Telecomunicación. 
+                Su misión principal es dar a conocer las titulaciones universitarias en áreas como el grado en Ingeniería de Telecomunicaciones y sus derivados. 
+                Además de su enfoque en educación superior, Telecomaster apoya diversos programas educativos que cubren áreas especializadas como redes de comunicación, comunicaciones móviles, sistemas de transmisión, comunicaciones satelitales e Internet de las Cosas (IoT).
+                <p align="justify">A través de recursos educativos y oportunidades de formación, Telecomaster busca ampliar el acceso a la educación en telecomunicaciones, especialmente para estudiantes de diversas regiones y contextos. 
+                    <b>Esta página web en concreto</b>, ofrece información sobre la <u>historia</u> de las telecomunicaciones y su desarrollo en el mundo contemporáneo, 
+                    sus <u>aplicaciones</u> y contribuciones en diversos ámbitos de la ciencia e información sobre la <u>formación</u> de un ingeniero de telecomunicaciones o sus derivados. 
+                    Puede acceder a este contenido haciendo click en cualquiera de la secciones indicadas en la cabecera de la página. </p>
+                </p align="justify">A continuación se expone datos generales y salariales sobre los ingenieros de telecomunicaciones en el mundo laboral actual. 
+                Esta información se ha obtenido fundamentalmente de la página <a href="https://www.jobted.es/salario/ingeniero-telecomunicaciones">jobted</a>
+                que estudia el desarrollo empresarial de los ingenieros de telecomunicaciones en <b>España</b>.Tenga en cuenta que los datos son orientativos y jamás se debería usar como valores límite a la hora de buscar en empleo.</p>
+        </section>
+        <section id="salarios" class="burbuja">
+            <h2>Salarios</h2>
+            <p align="justify">En la siguiente tabla se muestran los salarios esperados de un egresado de ingenería de telecomunicaciones. Cabe destacar que son esta</p>
             <table border="1", id="tabla"> <!-- ver en css el estilo -->
               <thead>
                   <tr>
-                      <th>Nombre</th>
-                      <th>Edad</th>
-                      <th>Ciudad</th>
+                      <th>Años de experiencia</th>
+                      <th>Salario medio esperado (bruto)</th>
+                      
                   </tr>
               </thead>
               <tbody>
                   <tr>
-                      <td>Antonio</td>
-                      <td>25</td>
-                      <td>Madrid</td>
+                      <td align="center ">Recién egresado (0 a 3 años)</td>
+                      <td align="center ">20.600 €</td>
                   </tr>
                   <tr>
-                      <td>Alicia</td>
-                      <td>30</td>
-                      <td>Barcelona</td>
+                      <td align="center ">Experiencia media (4 a 9 años)</td>
+                      <td align="center ">34.200 €</td>
                   </tr>
                   <tr>
-                      <td>Pedro</td>
-                      <td>35</td>
-                      <td>Valencia</td>
+                      <td align="center ">Senior (10 a 20 años)</td>
+                      <td align="center ">59.200 €</td>
+                  </tr>
+                  <tr>
+                       <td align="center ">Mucha experiencia (> 20 años)</td>
+                       <td align="center ">68.500 </td>
                   </tr>
               </tbody>
           </table>
-          
+          <p align="justify">Tenga en cuenta que al ser valores brutos, la cantidad de impuestos o tipos de tramos que le afecten variará según su correspondiente ingreso.
+            El más notorio suele ser el IRPF (Impuesto sobre la Renta de la Persona Física). Si quiere consultar que porcentaje corresponde a cada salario puede consultarlo en <a href="https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/hacienda/paginas/2023/220323-que-es-irpf-y-cuando-se-presenta.aspx#:~:text=Desde%2012.450%20hasta%2020.199%20euros,euros%3A%20retenci%C3%B3n%20del%2045%25.">página oficial de la Moncloa</a>
+          </p>
         </section>
 
-        <section id="aplicaciones" class="burbuja">
-            <h2>Aplicaciones de DSP</h2>
-            <p>Contenido sobre cómo se utiliza el DSP en diversas áreas.</p>
-        </section>
-
-        <section id="recursos" class="burbuja">
-            <h2>Recursos de DSP</h2>
-            <p>Enlaces a materiales de estudio sobre DSP.</p>
-        </section>
         <section id="info">
-          <h5>Para obtener más información, rellene el formulario que se muestra abajo</h5>
+          <h5>Para obtener más información, rellene el formulario que se muestra</h5>
           <!-- Formulario, ver Css para conf -->
           <!-- El action es para mandar la info -->
           <form id=formulario action="https://formspree.io/f/xovjlnqq" method="post">
@@ -84,10 +94,16 @@
               <legend>Formulario</legend>
               <label for="nombre_f">Nombre:</label>
               <input type="text" name= nombre id="nombre_f" maxlength="15" size="15">
+              <div class="apellidos">
+                <div>
               <label for="apellido1_f">1ºApellido:</label>
               <input type="text" name=apellido1 id="apellido1_f" maxlength="15" size="15">
-              <label for="apellido2_f">1ºApellido:</label>
+                </div>
+                <div>
+              <label for="apellido2_f">2ºApellido:</label>
               <input type="text" name=apellido2 id="apellido2_f" maxlength="15" size="15">
+                </div>
+              </div>
               <label for="dir_email">email:</label>
               <input type="email" name="email" id="dir_email">
               <label for="genero_f">Genero</label>
@@ -106,7 +122,7 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 PDS ANTON COBIAN IREGUI | All rights reserved</p>
+        <p>&copy; 2025 TELECOMASTER ANTON COBIAN IREGUI | All rights reserved</p>
     </footer>
 
 </body>

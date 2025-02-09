@@ -27,7 +27,7 @@ function validar_formulario(event) {
     const genero = document.getElementById("genero_f").value;
     
     // Campos rellenados?
-    if (nombre === "" || apellido1 === "" || apellido2 === "" || email === "" || genero === "") {
+    if (nombre === "" || apellido1 === "" || email === "" || genero === "") {
       alert("Por favor, complete todos los campos.");
       event.preventDefault();
       return false;  // Algo no esta relleno
